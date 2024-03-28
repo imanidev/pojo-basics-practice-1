@@ -1,6 +1,6 @@
 /***********************************************************************
-Write a function called `valuesInObject(obj)` that takes in an object and returns 
-an array of all the values within that Object. 
+Write a function called `valuesInObject(obj)` that takes in an object and returns
+an array of all the values within that Object.
 
 
 Do this once using using a `for...in` loop and once using `Object.values`.
@@ -14,8 +14,22 @@ valuesInObject(animals); // => ["Wolfie", "Jet", "Bilbo"]
 valuesInObject(foods); // => ["tart", "sour", "sweet"]
 ***********************************************************************/
 
-function valuesInObject(obj) {
-  // Your code here 
+// function valuesInObject(obj) {
+
+//   return Object.values(obj)
+
+// }
+
+const valuesInObject = obj => {
+
+  let valueArr = [];
+
+  for (let key in obj) {
+    let value = obj[key];
+    valueArr.push(value);
+  }
+
+  return valueArr;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
