@@ -8,8 +8,6 @@ let p1 = {firstName: 'John', lastName: 'Doe'};
 getFullName(p1); // => 'John Doe'
 ***********************************************************************/
 
-
-
 function getFullName(person) {
   let arrValues = Object.values(p2);
   let name = [];
